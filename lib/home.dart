@@ -58,12 +58,14 @@ class _HomeState extends State<Home> {
               child: TextField(
                 controller: cepController,
                 keyboardType: TextInputType.number,
+                maxLength: 8,
                 style: TextStyle(
                   fontSize: 25,
                   color: Colors.blue.shade700,
                   fontWeight: FontWeight.w600,
                 ),
                 decoration: const InputDecoration(
+                  counterText: "",
                   border: OutlineInputBorder(
                     borderSide: BorderSide(
                       color: Colors.black,
