@@ -25,15 +25,16 @@ class _HomeState extends State<Home> {
     String logradouro = retorno["logradouro"];
     String bairro = retorno["bairro"];
     String localidade = retorno["localidade"];
+    String complemento = retorno["complemento"];
 
     setState(() {
-      _resultado = "endereço: $logradouro\nbairro: $bairro\ncidade: $localidade";
+      _resultado = "endereço: $logradouro\nnumero: $complemento\nbairro: $bairro\ncidade: $localidade";
     });
 
     //print("CodigoResposta: " + response.statusCode.toString());
     //print("Resposta: " + response.body);
     //print(retorno);
-    print("endereço: $logradouro\nbairro: $bairro\ncidade: $localidade");
+    print("endereço: $logradouro\ncomplemento:$complemento\nbairro: $bairro\ncidade: $localidade");
 
 
 
